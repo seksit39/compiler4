@@ -80,7 +80,7 @@ void yyerror(const char *s);
 %%
 
 Input:
-     | Line Input
+     | Line Input;
 ;
 
 Line:
@@ -345,7 +345,6 @@ void stack_print()
 
 
 int main(int argc, const char *argv[]) {
-  printf("%s\n", argv[1]);
   yyin = fopen(argv[1], "r");
   if(yyin == NULL){
      printf("invalid input file\n");

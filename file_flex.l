@@ -1,7 +1,7 @@
 %{
 #include <cstdio>
 #include <iostream>
-#include "comp.tab.h"
+#include "file_bison.tab.h"
 #define YY_DECL extern "C" int yylex()
 using namespace std;
 %}
